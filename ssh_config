@@ -1,0 +1,6 @@
+Host *
+  IdentityFile ~/.ssh/id_rsa
+  Port 22
+  CheckHostIP no
+  StrictHostKeyChecking no
+  HashKnownHosts no
