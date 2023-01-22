@@ -14,15 +14,6 @@ for i in "$VERSION" "latest"; do
   docker push "$IMAGE_NAME:$i";
 done
 
-#--------------------------
-
-docker build --build-arg INSTALL_ANSIBLE=1 --tag "$IMAGE_NAME:with-ansible-latest" --tag "$IMAGE_NAME:with-ansible-$VERSION" .
-
-for i in "$VERSION" "latest"; do
-  printf "\n------\npushing '$IMAGE_NAME:with-ansible-$i'\n";
-  docker push "$IMAGE_NAME:with-ansible-$i";
-done
-
 echo " "
 echo "[ DONE ]"
 echo " "

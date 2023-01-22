@@ -1,8 +1,18 @@
 # alpine-git
 
-Docker image with Alpine Linux, bash, git, openssh-client and curl
+Alpine Linux, включающий:
 
-[Docker Hub Link](https://hub.docker.com/r/mottor1/alpine-git)
+- bash
+- git
+- openssl, openssh-client
+- curl
+- vim
+- rsync
+- python3, pip
+- jq, [yq](https://github.com/mikefarah/yq)
+- [j2](https://github.com/kolypto/j2cli) (шаблонизатор jinja)
+
+Ссылка [Docker Hub Link](https://hub.docker.com/r/mottor1/alpine-git)
 
 Command to use:
 
